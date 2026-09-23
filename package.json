@@ -1,0 +1,23 @@
+{
+  "name": "test-pw-3",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test tests/api",
+    "test:headed": "playwright test --headed",
+    "test:watch": "playwright test --ui",
+    "report": "playwright show-report",
+    "report:allure": "allure generate allure-results --clean -o allure-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "typescript": "^5.9.2",
+    "allure-playwright": "^3.2.2",
+    "dotenv": "^16.4.7",
+    "@axe-core/playwright": "^4.10.1"
+  }
+
+  
+}
