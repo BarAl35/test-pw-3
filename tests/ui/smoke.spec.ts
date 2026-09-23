@@ -10,9 +10,11 @@ test.describe("UI smoke", () => {
 
 
 
+
   test("accessibility smoke", async ({ page }) => {
     
     const results = await new AxeBuilder({ page }).analyze();
+    console.log("test12");
 
     expect(results.violations).toEqual([]);
   });
